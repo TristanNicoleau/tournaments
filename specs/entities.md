@@ -2,31 +2,34 @@ Project entities
 ====================
 
 ### Tournament
-* id: number
-* name: string
-* games: Array<Match>
+id: number
+name: string
+matches: Array<Match>
+game: Game
 
 ### Match
-* id: number
-* status: Status
-* homeScore: number
-* awayScore: number
-* homePlayer: Player
-* awayPlayer: Player
+id: number
+status: Status
+home: Result
+away: Result
+
+### Result
+score: number
+player: Player
 
 ### Status
-* id: number
-* name: string
+id: number
+name: string
 
 ### Player
-* id: number
-* name: string
+id: number
+name: string
 
 ### Game
-* id: number
-* name: string
-* categories: Array<Category>
+id: number
+name: string
+categories: Array<Category>
 
 ### Category
-* id: number
-* name: string
+id: number
+name: string
