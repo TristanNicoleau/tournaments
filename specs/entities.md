@@ -1,29 +1,32 @@
-Tournament
-  id: number
-  name: string
-  games: Array<Match>
+Project entities
+====================
 
-Match
-  id: number
-  status: Status
-  homeScore: number
-  awayScore: number
-  homePlayer: Player
-  awayPlayer: Player
+### Tournament
+* id: number
+* name: string
+* games: Array<Match>
 
-Status
-  id: number
-  name: string
+### Match
+* id: number
+* status: Status
+* homeScore: number
+* awayScore: number
+* homePlayer: Player
+* awayPlayer: Player
 
-Player
-  id: number
-  name: string
+### Status
+* id: number
+* name: string
 
-Game
-  id: number
-  name: string
-  categories: Array<Category>
+### Player
+* id: number
+* name: string
 
-Category
-  id: number
-  name: string
+### Game
+* id: number
+* name: string
+* categories: Array<Category>
+
+### Category
+* id: number
+* name: string
