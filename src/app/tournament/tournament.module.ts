@@ -8,12 +8,15 @@ import { TournamentService } from './tournament.service';
 import { TournamentEditComponent } from './edit/tournament-edit.component';
 import { TournamentsListComponent } from './list/tournaments-list.component';
 
+import { MdInputModule } from '@angular/material';
+
 @NgModule({
   imports: [
-  	BrowserModule,
+    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    MdInputModule
   ],
   declarations: [
   	TournamentEditComponent,

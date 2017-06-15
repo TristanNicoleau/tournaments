@@ -7,7 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var app_routing_1 = require("./app.routing");
-var platform_browser_1 = require("@angular/platform-browser");
+// import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 var tournament_module_1 = require("./tournament/tournament.module");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
@@ -19,7 +20,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
-            platform_browser_1.BrowserModule,
+            // BrowserModule,
+            //  BrowserAnimationsModule,
             tournament_module_1.TournamentModule,
             app_routing_1.ROUTES
         ],
