@@ -1,6 +1,9 @@
-<a routerLink="/home">Accueil</a>
-<a routerLink="/tournaments">Mes tournois</a>
-<a routerLink="/tournaments/create">Créer un tournoi</a>
-<a routerLink="/about">À propos</a>
+<button md-button [mdMenuTriggerFor]="menu">Menu</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item routerLink="/home">Accueil</button>
+	<button md-menu-item routerLink="/tournaments">Mes tournois</button>
+	<button md-menu-item routerLink="/tournaments/create">Créer un tournoi</button>
+	<button md-menu-item routerLink="/about">À propos</button>
+</md-menu>
 
 <router-outlet></router-outlet>
