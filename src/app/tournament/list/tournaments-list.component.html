@@ -1,0 +1,7 @@
+<ul>
+	<li *ngFor="let tournament of tournaments$ | async">
+		<a routerLink="/tournaments/1">{{ tournament.title }}</a>
+	</li>
+</ul>
+
+<button>Ajouter un tournoi</button>

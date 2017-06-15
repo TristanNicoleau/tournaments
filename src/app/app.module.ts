@@ -1,18 +1,24 @@
 import { NgModule }      from '@angular/core';
+import { ROUTES } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { TournamentModule } from './tournament/tournament.module';
+
 import { AppComponent }  from './app.component';
-import { PlayerDetailsComponent }  from './player-details.component';
+import { HomeComponent }  from './home/home.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ 
+  	BrowserModule,
+  	TournamentModule,
+		ROUTES
+  ],
   declarations: [ 
   	AppComponent,
-  	PlayerDetailsComponent
+  	HomeComponent
   ],
   bootstrap:    [ 
-  	AppComponent,
-  	PlayerDetailsComponent
+  	AppComponent
  ]
 })
 export class AppModule { }
