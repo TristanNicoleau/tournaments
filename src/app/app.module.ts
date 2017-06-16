@@ -3,7 +3,14 @@ import { ROUTES } from './app.routing';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdMenuModule, MdSidenavModule, MdButtonModule } from '@angular/material';
+import { 
+  MdMenuModule,
+  MdSidenavModule, 
+  MdButtonModule, 
+  MdToolbarModule,
+  MdIconModule,
+  MdListModule
+} from '@angular/material';
 
 import { TournamentModule } from './tournament/tournament.module';
 
@@ -15,7 +22,12 @@ import { HomeComponent }  from './home/home.component';
     BrowserModule,
     BrowserAnimationsModule,
   	TournamentModule,
-    MdMenuModule, MdSidenavModule, MdButtonModule,
+    MdMenuModule,
+    MdSidenavModule,
+    MdButtonModule,
+    MdToolbarModule,
+    MdIconModule,
+    MdListModule,
 		ROUTES
   ],
   declarations: [ 
